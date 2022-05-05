@@ -1,0 +1,477 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2E1DEAB9-ABC2-4133-82A2-76BB6304F35D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SistemaOlano</RootNamespace>
+    <AssemblyName>SistemaOlano</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp">
+      <HintPath>..\packages\iTextSharp\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialSkin">
+      <HintPath>..\packages\MaterialSkin.0.2.1\lib\MaterialSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.Ribbon">
+      <HintPath>..\packages\RibbonWinForms.5.0.1.1\lib\net45\System.Windows.Forms.Ribbon.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="IUAdministrador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IUAdministrador.Designer.cs">
+      <DependentUpon>IUAdministrador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IUCajero.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IUCajero.Designer.cs">
+      <DependentUpon>IUCajero.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IURegistrarDevolucionAProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IURegistrarDevolucionAProveedor.Designer.cs">
+      <DependentUpon>IURegistrarDevolucionAProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IUEncargadoAlmacen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IUEncargadoAlmacen.Designer.cs">
+      <DependentUpon>IUEncargadoAlmacen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IUGestionarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IUGestionarCliente.Designer.cs">
+      <DependentUpon>IUGestionarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IUGestionarProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IUGestionarProducto.Designer.cs">
+      <DependentUpon>IUGestionarProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IUGestionarTrabajador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IUGestionarTrabajador.Designer.cs">
+      <DependentUpon>IUGestionarTrabajador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IUIniciarSesion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IUIniciarSesion.Designer.cs">
+      <DependentUpon>IUIniciarSesion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IUClienteFerreteroConMayorGasto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IUClienteFerreteroConMayorGasto.Designer.cs">
+      <DependentUpon>IUClienteFerreteroConMayorGasto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IUListarPedidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IUListarPedidos.Designer.cs">
+      <DependentUpon>IUListarPedidos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IUListarProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IUListarProductos.Designer.cs">
+      <DependentUpon>IUListarProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IUListarVentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IUListarVentas.Designer.cs">
+      <DependentUpon>IUListarVentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IULogo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IULogo.Designer.cs">
+      <DependentUpon>IULogo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IUModificarStockDeProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IUModificarStockDeProducto.Designer.cs">
+      <DependentUpon>IUModificarStockDeProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IUPedidosRechazados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IUPedidosRechazados.Designer.cs">
+      <DependentUpon>IUPedidosRechazados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IURegistrarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IURegistrarCliente.Designer.cs">
+      <DependentUpon>IURegistrarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IURegistrarProductoDefectuosoPorGarantia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IURegistrarProductoDefectuosoPorGarantia.Designer.cs">
+      <DependentUpon>IURegistrarProductoDefectuosoPorGarantia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IURegistrarDevolucionDeDineroPorGarantia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IURegistrarDevolucionDeDineroPorGarantia.Designer.cs">
+      <DependentUpon>IURegistrarDevolucionDeDineroPorGarantia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IURegistrarEntregaDeProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IURegistrarEntregaDeProductos.Designer.cs">
+      <DependentUpon>IURegistrarEntregaDeProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IURegistrarPago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IURegistrarPago.Designer.cs">
+      <DependentUpon>IURegistrarPago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IURegistrarPedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IURegistrarPedido.Designer.cs">
+      <DependentUpon>IURegistrarPedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IURegistrarProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IURegistrarProducto.Designer.cs">
+      <DependentUpon>IURegistrarProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IURegistrarRespuestaDePedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IURegistrarRespuestaDePedido.Designer.cs">
+      <DependentUpon>IURegistrarRespuestaDePedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IURegistrarSolicitudDeAbastecimiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IURegistrarSolicitudDeAbastecimiento.Designer.cs">
+      <DependentUpon>IURegistrarSolicitudDeAbastecimiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IURegistrarVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IURegistrarVenta.Designer.cs">
+      <DependentUpon>IURegistrarVenta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IUResumenDeVentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IUResumenDeVentas.Designer.cs">
+      <DependentUpon>IUResumenDeVentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IUVendedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IUVendedor.Designer.cs">
+      <DependentUpon>IUVendedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IUVendedoresQueMasVendieron.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IUVendedoresQueMasVendieron.Designer.cs">
+      <DependentUpon>IUVendedoresQueMasVendieron.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="IUAdministrador.resx">
+      <DependentUpon>IUAdministrador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IUCajero.resx">
+      <DependentUpon>IUCajero.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IURegistrarDevolucionAProveedor.resx">
+      <DependentUpon>IURegistrarDevolucionAProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IUEncargadoAlmacen.resx">
+      <DependentUpon>IUEncargadoAlmacen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IUGestionarCliente.resx">
+      <DependentUpon>IUGestionarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IUGestionarProducto.resx">
+      <DependentUpon>IUGestionarProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IUGestionarTrabajador.resx">
+      <DependentUpon>IUGestionarTrabajador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IUIniciarSesion.resx">
+      <DependentUpon>IUIniciarSesion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IUClienteFerreteroConMayorGasto.resx">
+      <DependentUpon>IUClienteFerreteroConMayorGasto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IUListarPedidos.resx">
+      <DependentUpon>IUListarPedidos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IUListarProductos.resx">
+      <DependentUpon>IUListarProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IUListarVentas.resx">
+      <DependentUpon>IUListarVentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IULogo.resx">
+      <DependentUpon>IULogo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IUModificarStockDeProducto.resx">
+      <DependentUpon>IUModificarStockDeProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IUPedidosRechazados.resx">
+      <DependentUpon>IUPedidosRechazados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IURegistrarCliente.resx">
+      <DependentUpon>IURegistrarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IURegistrarProductoDefectuosoPorGarantia.resx">
+      <DependentUpon>IURegistrarProductoDefectuosoPorGarantia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IURegistrarDevolucionDeDineroPorGarantia.resx">
+      <DependentUpon>IURegistrarDevolucionDeDineroPorGarantia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IURegistrarEntregaDeProductos.resx">
+      <DependentUpon>IURegistrarEntregaDeProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IURegistrarPago.resx">
+      <DependentUpon>IURegistrarPago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IURegistrarPedido.resx">
+      <DependentUpon>IURegistrarPedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IURegistrarProducto.resx">
+      <DependentUpon>IURegistrarProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IURegistrarRespuestaDePedido.resx">
+      <DependentUpon>IURegistrarRespuestaDePedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IURegistrarSolicitudDeAbastecimiento.resx">
+      <DependentUpon>IURegistrarSolicitudDeAbastecimiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IURegistrarVenta.resx">
+      <DependentUpon>IURegistrarVenta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IUResumenDeVentas.resx">
+      <DependentUpon>IUResumenDeVentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IUVendedor.resx">
+      <DependentUpon>IUVendedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IUVendedoresQueMasVendieron.resx">
+      <DependentUpon>IUVendedoresQueMasVendieron.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imageedit_2_8556170275.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imageedit_4_4179607494.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imageedit_6_5725186211.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Sleek-Xp-Basic-Money.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Umut-Pulat-Tulliana-2-Korganizer.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Graphicloads-Colorful-Long-Shadow-Check-3.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Double-J-Design-Ravenna-3d-Box.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Aha-Soft-Large-Business-Cash-register.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imageedit_4_7817389151.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Aha-Soft-Large-User-Coffee-break.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Sleek-Xp-Basic-User-Group.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Google-Noto-Emoji-People-Profession-10526-woman-construction-worker-light-skin-tone.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Custom-Icon-Design-Mono-Business-2-Coffee.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coffee-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Double-J-Design-Super-Mono-3d-Shopping-bag.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Custom-Icon-Design-Pretty-Office-10-Numbers.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Musett-Lcd-Boxes-Broken-Clean.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Custom-Icon-Design-Flatastic-2-Truck.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sin título.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Empty.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sin título1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hopstarter-Sleek-Xp-Basic-Zoom.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Start-Menu-Search-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Start-Menu-Search-icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Actions-dialog-ok-apply-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close-2-icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close-2-icon %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\math-minus-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Checklist-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\broom-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Actions-dialog-ok-apply-icon %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close-2-icon %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hp-customization-control-panel-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\documents-white-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-user-computer-icons-symbol-5aff29c27daa60.7927792015266718105147.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-user-computer-icons-symbol-5aff29c2b16c40.4032216315266718107267.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-computer-icons-login-user-desktop-wallpaper-5affc034d3b592.1828431015267103248672.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NegocioSistemaOlano\NegocioSistemaOlano.csproj">
+      <Project>{9edaa54d-b8cf-4e2a-83f8-35e6c17e43b6}</Project>
+      <Name>NegocioSistemaOlano</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boleta.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\solicitud-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\solicitud.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
