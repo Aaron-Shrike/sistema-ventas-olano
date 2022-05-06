@@ -9,18 +9,28 @@ Sistema de ventas para la empresa Olano en lenguaje CSharp y base de datos SQLSe
 ## Uso
 1. [**Interfaz Administrador**](#interfaz-administrador)
    - [**Registros administrador**](#registros-administrador)
-    - [**Gestión de producto**](#gestión-de-producto)
-    - [**Gestión de trabajador**](#gestión-de-trabajador)
+      - [**Gestión de producto**](#gestión-de-producto)
+      - [**Gestión de trabajador**](#gestión-de-trabajador)
    - [**Reportes administrador**](#reportes-administrador)
-2. [**Interfaz Vendedor**](#interfaz-vendedir)
-   - [**Regitrar**](#registrar)
-   - [**Cuenta**](#cuenta)
+2. [**Interfaz Vendedor**](#interfaz-vendedor)
+   - [**Regitros vendedor**](#registros-vendedor)
+      - [**Venta**](#venta)
+   - [**Cuenta vendedor**](#cuenta-vendedor)
 3. [**Interfaz Cajero**](#interfaz-cajero)
-   - [**Regitrar**](#registrar)
-   - [**Reportes**](#reportes)
-4. [**Interfaz Encargado de Almacén**](#interfaz-encargador-de-almacén)
-   - [**Regitrar**](#registrar)
-   - [**Reportes**](#reportes)
+   - [**Regitros cajero**](#registros-cajero)
+      - [**Pago**](#pago)
+      - [**Pedido**](#pedido)
+      - [**Respuesta de pedido**](#respuesta-de-pedido)
+      - [**Solicitud de abastecimiento**](#solicitud-de-abastecimiento)
+      - [**Devolución de dinero**](#devolución-de-dinero)
+   - [**Reportes cajero**](#reportes-cajero)
+4. [**Interfaz Encargado de Almacén**](#interfaz-encargado-de-almacén)
+   - [**Regitros encargado de almacén**](#registros-encargado-de-almacén)
+      - [**Entrega**](#entrega)
+      - [**Producto**](#producto)
+      - [**Modificar stock de producto**](#modificar-stock-de-producto)
+      - [**Producto defectuoso**](#producto-defectuoso)
+   - [**Reportes encargado de almacén**](#reportes-encargado-de-almacén)
 
 ## Interfaz Administrador
 
@@ -31,7 +41,7 @@ Sistema de ventas para la empresa Olano en lenguaje CSharp y base de datos SQLSe
 <p><strong>Imagen:</strong> Menú de registros.</p>
 </div>
 
-#### Getión de producto
+#### Gestión de producto
 
 <div align="center">
 <img src="media/a-2-r1-gestionar-producto.png">
@@ -61,7 +71,7 @@ Sistema de ventas para la empresa Olano en lenguaje CSharp y base de datos SQLSe
 <p><strong>Imagen:</strong> Menú de registros.</p>
 </div>
 
-#### Registro de venta
+#### Venta
 
 <div align="center">
 <img src="media/v-2-r1-registrar-venta.png">
@@ -77,49 +87,49 @@ Sistema de ventas para la empresa Olano en lenguaje CSharp y base de datos SQLSe
 
 ## Interfaz Cajero
 
-### Registrar
+### Registros cajero
 
 <div align="center">
 <img src="media/c-2-menu-registrar.png">
 <p><strong>Imagen:</strong> Menú de registros.</p>
 </div>
 
-#### Registro de pago
+#### Pago
 
 <div align="center">
 <img src="media/c-2-r1-registrar-pago.png">
 <p><strong>Imagen:</strong> Registro de pago.</p>
 </div>
 
-#### Registro de pedido
+#### Pedido
 
 <div align="center">
 <img src="media/c-2-r2-registrar-pedido.png">
 <p><strong>Imagen:</strong> Registro de pedido.</p>
 </div>
 
-#### Registro de respuesta de pedido
+#### Respuesta de pedido
 
 <div align="center">
 <img src="media/c-2-r3-registrar-respuesta-de-pedido.png">
 <p><strong>Imagen:</strong> Registro de respuesta de pedido.</p>
 </div>
 
-#### Registro de solicitud de abastecimiento
+#### Solicitud de abastecimiento
 
 <div align="center">
 <img src="media/c-2-r4-registrar-solicitud-de-abastecimiento.png">
 <p><strong>Imagen:</strong> Registro de solicitud de abastecimiento.</p>
 </div>
 
-#### Registro de devolución de dinero
+#### Devolución de dinero
 
 <div align="center">
 <img src="media/c-2-r5-registrar-devolucion-de-dinero.png">
 <p><strong>Imagen:</strong> Registro de devolución de dinero.</p>
 </div>
 
-### Reportes
+### Reportes cajero
 
 <div align="center">
 <img src="media/c-2-menu-reportes.png">
@@ -128,21 +138,21 @@ Sistema de ventas para la empresa Olano en lenguaje CSharp y base de datos SQLSe
 
 ## Interfaz Encargado de Almacén
 
-### Registrar
+### Registros encargado de almacén
 
 <div align="center">
 <img src="media/e-2-menu-registrar.png">
 <p><strong>Imagen:</strong> Menú de registros.</p>
 </div>
 
-#### Registro de entrega
+#### Entrega
 
 <div align="center">
 <img src="media/e-2-r2-registrar-entrega.png">
 <p><strong>Imagen:</strong> Registro de entrega.</p>
 </div>
 
-#### Registro de producto
+#### Producto
 
 <div align="center">
 <img src="media/e-2-r3-registrar-producto.png">
@@ -156,14 +166,14 @@ Sistema de ventas para la empresa Olano en lenguaje CSharp y base de datos SQLSe
 <p><strong>Imagen:</strong> Modificar stock de producto.</p>
 </div>
 
-#### Registro de producto defectuoso
+#### Producto defectuoso
 
 <div align="center">
 <img src="media/e-2-r1-registrar-producto-defectuoso.png">
 <p><strong>Imagen:</strong> Registro de producto defectuoso.</p>
 </div>
 
-### Reportes
+### Reportes encargado de almacén
 
 <div align="center">
 <img src="media/e-2-menu-reportes.png">
